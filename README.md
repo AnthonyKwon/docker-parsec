@@ -3,8 +3,15 @@
 Parsec in a docker container 
 
 
+How to build?
 ```bash
-docker pull jaredallard/parsec
+git clone https://github.com/AnthonyKwon/docker-parsec.git
+cd docker-parsec
+./build.sh
+```
+
+How to use?
+```bash
 ./parsec
 ```
 
@@ -23,7 +30,7 @@ docker pull jaredallard/parsec
 
 **Note**: The binary is NOT able to update itself, so you may need to update
 your container at some point. The container has no state configure so you should
-just have to `docker pull jaredallard/parsec:<version>` and re-run `./parsec`
+just have to `./build.sh` and re-run `./parsec`
 
 ## Persistence
 
