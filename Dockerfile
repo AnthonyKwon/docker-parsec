@@ -1,5 +1,5 @@
 # See base-image/image
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
 COPY bin/install_clean /usr/bin/install_clean
 RUN chmod +x /usr/bin/install_clean
